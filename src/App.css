@@ -102,8 +102,8 @@ text-align: center;
 } */
 
 .but{
-  height: 50px;
-  width: 100px;
+  height: 5vh;
+  width: 10vh;
   font-size: 20px !important;
 }
 ::placeholder{
