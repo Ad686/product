@@ -42,7 +42,7 @@ function Navbar() {
                         })
                     }
                     else {
-                        alert("already login")
+                        alert("Let's Shopping")
                         setid(true)
                         db.collection("form1").get().then((succc) => {
                             succc.forEach((abc) => {
@@ -70,6 +70,7 @@ function Navbar() {
         setid(false)
         localStorage.removeItem("Docid")
         localStorage.removeItem("UID")
+        navi('/')
 
     }
     function cart() {
@@ -89,23 +90,19 @@ function Navbar() {
                 <ul className="nav navbar-nav navbar-right">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/admin'>Admin</Link></li>
-                    <li> <div class="dropdown">
+                    {/* <li> <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle navbar-btn" type="button" data-toggle="dropdown">Sort By
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu">
                             <button className="btn btn-warning" value={'desc'} onClick={(e)=>setval(e.target.value)}>High to Low</button>
                             <button className="btn btn-warning" value={'asc'} onClick={(e)=>setval(e.target.value)}>Low to High</button>\
                         </ul>
-                    </div></li>
+                    </div></li> */}
                     <li><Link to='/user'>User</Link></li>
-                    {id ? (
-                        <li><button onClick={logout} className="btn btn-success navbar-btn">logout</button>
+                    <li><button onClick={logout} className="btn btn-success navbar-btn">logout</button>
                             &nbsp;&nbsp;
                             <button className="btn btn-warning navbar-btn" onClick={cart}>MY CART</button>
                         </li>
-                    ) : (
-                        <li><button onClick={login} className="btn btn-danger navbar-btn">login</button></li>
-                    )}
 
 
                 </ul>
