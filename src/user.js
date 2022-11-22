@@ -10,7 +10,8 @@ function User() {
   var user = localStorage.getItem("Docid");
   console.log(user)
   const [nm, setnm] = useState()
-  const [em, setem] = useState()
+  const [em, setem] = useState() 
+
 
   const [val, setval] = useState('asc')
   function getoneuser() {
@@ -66,7 +67,7 @@ function User() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar/>
       <div className="form-group col-xs-4">
         <h4>Select Order Of Pricing</h4>
         <select className="form-control" onChange={(e) => setval(e.target.value)}>
