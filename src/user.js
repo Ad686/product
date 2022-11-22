@@ -66,7 +66,7 @@ function User() {
 
   return (
     <div>
-      <Usernavbar />
+      <Navbar />
       <div className="form-group col-xs-4">
         <h4>Select Order Of Pricing</h4>
         <select className="form-control" onChange={(e) => setval(e.target.value)}>
