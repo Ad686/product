@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import { db } from "./firebase";
 import { storage } from "./firebase"
+import Usernavbar from "./usernavbar";
 function Admin() {
 
     var value = localStorage.getItem("Val")
@@ -111,7 +112,7 @@ function Admin() {
     }
     return (
         <>
-            <Navbar/>
+            <Usernavbar/>
 
             <form className="col-lg-3 form" onSubmit={xyz}>
                 <div className="form-group">

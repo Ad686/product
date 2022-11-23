@@ -90,14 +90,14 @@ function Navbar() {
                 <ul className="nav navbar-nav navbar-right">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/admin'>Admin</Link></li>
-                    {/* <li> <div class="dropdown">
+                    <li> <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle navbar-btn" type="button" data-toggle="dropdown">Sort By
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu">
                             <button className="btn btn-warning" value={'desc'} onClick={(e)=>setval(e.target.value)}>High to Low</button>
                             <button className="btn btn-warning" value={'asc'} onClick={(e)=>setval(e.target.value)}>Low to High</button>\
                         </ul>
-                    </div></li> */}
+                    </div></li>
                     <li><Link to='/user'>User</Link></li>
                     <li><button onClick={logout} className="btn btn-success navbar-btn">logout</button>
                             &nbsp;&nbsp;
